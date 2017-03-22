@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.fudd">
+    package="com.fudd.main">
 
     <application
         android:allowBackup="true"
@@ -15,10 +15,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".timetracker.activity.TimeTrackerActivity" android:label="@string/app_timetracker"/>
+        <activity android:name="com.fudd.timetracker.activity.TimeTrackerActivity" android:label="@string/app_timetracker"/>
+        <activity android:name="com.fudd.calendarstudy.activity.CalendarActivity" android:label="@string/app_calendarstudy"/>
 
-
-        <service android:name=".timetracker.service.TimeService"/>
+        <service android:name="com.fudd.timetracker.service.TimeService"/>
     </application>
 
 </manifest>

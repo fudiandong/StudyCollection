@@ -22,7 +22,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.fudd.R;
+import com.fudd.main.R;
 import com.fudd.timetracker.adapter.TimeListAdapter;
 import com.fudd.timetracker.fragment.ConfirmDialogFragment;
 import com.fudd.timetracker.service.TimeService;

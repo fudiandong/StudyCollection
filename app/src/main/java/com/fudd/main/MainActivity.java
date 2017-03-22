@@ -1,4 +1,4 @@
-package com.fudd;
+package com.fudd.main;
 
 import android.content.Intent;
 import android.support.v4.view.ViewPager;
@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.fudd.calendarstudy.activity.CalendarActivity;
 import com.fudd.timetracker.activity.TimeTrackerActivity;
 
 import butterknife.BindView;
@@ -16,6 +17,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @BindView(R.id.btn_timetracker)
     Button btn_TimeTracker;
+    @BindView(R.id.btn_calendar)
+    Button btn_CalendarStudy;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initListener() {
         btn_TimeTracker.setOnClickListener(this);
+        btn_CalendarStudy.setOnClickListener(this);
     }
 
 
@@ -36,6 +41,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()){
             case R.id.btn_timetracker:
                 startActivity(new Intent(this, TimeTrackerActivity.class));
+                break;
+            case R.id.btn_calendar:
+                startActivity(new Intent(this, CalendarActivity.class));
                 break;
             default:
                 break;

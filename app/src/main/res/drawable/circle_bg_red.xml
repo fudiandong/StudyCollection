@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!--<corners  角-->
+        <!--<gradient 坡度 倾斜度-->
+            <!--<padding 填料-->
+                <!--<size 大小-->
+                    <!--<solid 固体的；可靠的；立体的-->
+                        <!--<stroke 边缘 -->
+    <solid android:color="@android:color/holo_red_dark"/>
+    <stroke
+        android:width="3dp"
+        android:color="@color/yellow"/>
+
+</shape>

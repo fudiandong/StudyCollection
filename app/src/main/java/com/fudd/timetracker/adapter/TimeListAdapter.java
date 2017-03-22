@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.fudd.R;
+import com.fudd.main.R;
 
 /**
  * Created by fudd-office on 2017-3-16 15:32.

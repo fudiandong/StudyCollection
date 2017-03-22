@@ -1,13 +1,18 @@
 <resources>
     <string name="app_name">StudyCollection</string>
-    <string name="app_timetracker">TimeTracker</string>
+
 
     <!--timetracker-->
+    <string name="app_timetracker">TimeTracker</string>
     <string name="btn_on">开始</string>
     <string name="btn_off">停止</string>
     <string name="btn_finished">重置</string>
     <string name="task_name">Task %1$d</string>
     <string name="clear_all">清除所有</string>
+    <!--==========-->
 
+
+    <!-- calendarstudy -->
+    <string name="app_calendarstudy">CalendarStudy</string>
     <!--==========-->
 </resources>

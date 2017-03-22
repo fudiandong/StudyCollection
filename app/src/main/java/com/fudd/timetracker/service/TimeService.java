@@ -13,7 +13,7 @@ import android.support.annotation.Nullable;
 import android.text.format.DateUtils;
 import android.util.Log;
 
-import com.fudd.R;
+import com.fudd.main.R;
 import com.fudd.timetracker.activity.TimeTrackerActivity;
 
 /**
