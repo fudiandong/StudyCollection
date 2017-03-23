@@ -4,7 +4,7 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     tools:context="com.fudd.thisview.MainActivity">
 
-   <com.fudd.customview.view.MyView
+   <com.fudd.thisview.view.MyView
        android:id="@+id/vv"
        android:layout_width="match_parent"
        android:layout_height="match_parent" />
