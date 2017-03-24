@@ -108,7 +108,7 @@ public class CalendarActivity extends AppCompatActivity implements OnDateSelecte
             } else if (x ==2){
                 backgroundDrawable = getResources().getDrawable(R.drawable.rest1);
             } else {
-                backgroundDrawable = getResources().getDrawable(R.drawable.wancheng2);
+                backgroundDrawable = getResources().getDrawable(R.drawable.wancheng);
             }
 
         }
