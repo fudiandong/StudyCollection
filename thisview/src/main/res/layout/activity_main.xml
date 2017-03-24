@@ -4,11 +4,11 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     tools:context="com.fudd.thisview.MainActivity">
 
-   <com.fudd.thisview.view.MyView
-       android:id="@+id/vv"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent" />
-   <!--<com.fudd.customview.view.PorterDuffView-->
+   <!--<com.fudd.thisview.view.MyView-->
+       <!--android:id="@+id/vv"-->
        <!--android:layout_width="match_parent"-->
        <!--android:layout_height="match_parent" />-->
+   <com.fudd.thisview.view.PorterDuffView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" />
 </RelativeLayout>
