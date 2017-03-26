@@ -1,1 +1,1 @@
-include ':app', ':materialdome', ':thisview'
+include ':app', ':materialdome', ':thisview', ':alarmdemo'
