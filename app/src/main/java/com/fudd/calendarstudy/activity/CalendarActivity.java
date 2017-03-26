@@ -104,11 +104,11 @@ public class CalendarActivity extends AppCompatActivity implements OnDateSelecte
 
             days = list;
             if (x == 1){
-                backgroundDrawable = getResources().getDrawable(R.drawable.finshed);
+                backgroundDrawable = getResources().getDrawable(R.drawable.finished);
             } else if (x ==2){
-                backgroundDrawable = getResources().getDrawable(R.drawable.rest);
+                backgroundDrawable = getResources().getDrawable(R.drawable.rest1);
             } else {
-                backgroundDrawable = getResources().getDrawable(R.drawable.finshed);
+                backgroundDrawable = getResources().getDrawable(R.drawable.wancheng);
             }
 
         }
