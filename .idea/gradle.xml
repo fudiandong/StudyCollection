@@ -9,9 +9,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/alarm" />
             <option value="$PROJECT_DIR$/alarmdemo" />
+            <option value="$PROJECT_DIR$/alarmmanagerclock" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/customview" />
             <option value="$PROJECT_DIR$/materialdome" />
             <option value="$PROJECT_DIR$/thisview" />
           </set>

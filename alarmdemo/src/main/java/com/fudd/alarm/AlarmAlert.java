@@ -39,15 +39,17 @@ public class AlarmAlert extends Activity
     }
     new AlertDialog.Builder(AlarmAlert.this)
         .setIcon(R.drawable.clock)
-        .setTitle("大明闹钟响了!!")
+        .setTitle("闹钟响了!!")
         .setMessage("快完成你制定的计划吧!!!")
         .setPositiveButton("关掉它",
          new DialogInterface.OnClickListener()
         {
           public void onClick(DialogInterface dialog, int whichButton)
           {
-            AlarmAlert.this.finish();
+
             mMediaPlayer.stop();
+            mMediaPlayer.release();
+            finish();
           }
         })
         .show();

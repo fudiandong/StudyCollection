@@ -107,7 +107,7 @@ public class MainActivity extends Activity {
 			              editor.putString("TIME1", tmpS);
 			              editor.commit();
 			              
-			              Toast.makeText(MainActivity.this,"设置大明闹钟时间为"+tmpS,
+			              Toast.makeText(MainActivity.this,"设置闹钟时间为"+tmpS,
 			                Toast.LENGTH_SHORT)
 			                .show();
 			            }          
@@ -129,7 +129,7 @@ public class MainActivity extends Activity {
 			        AlarmManager am;
 			        am =(AlarmManager)getSystemService(ALARM_SERVICE);
 			        am.cancel(sender);
-			        Toast.makeText(MainActivity.this,"大明闹钟时间删除",
+			        Toast.makeText(MainActivity.this,"闹钟时间删除",
 			                       Toast.LENGTH_SHORT).show();
 			        setTime1.setText("目前无设置");
 			        
