@@ -5,6 +5,8 @@
     <com.prolificinteractive.materialcalendarview.MaterialCalendarView
         android:id="@+id/mcv"
         android:layout_width="match_parent"
+        android:layerType="software"
+        android:layoutMode="opticalBounds"
         android:layout_height="wrap_content">
     </com.prolificinteractive.materialcalendarview.MaterialCalendarView>
     <ScrollView
