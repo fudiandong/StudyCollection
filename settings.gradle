@@ -1,1 +1,1 @@
-include ':app', ':materialdome', ':thisview', ':alarmdemo', ':alarmmanagerclock', ':alarm'
+include ':app', ':materialdome', ':thisview', ':alarmdemo', ':alarmmanagerclock', ':alarm', ':calendardemo'
