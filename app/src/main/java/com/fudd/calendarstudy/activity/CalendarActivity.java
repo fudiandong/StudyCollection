@@ -7,6 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.fudd.main.R;
 import com.prolificinteractive.materialcalendarview.CalendarDay;
@@ -19,6 +20,7 @@ import com.prolificinteractive.materialcalendarview.OnDateSelectedListener;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 import butterknife.BindView;
@@ -30,7 +32,7 @@ import butterknife.ButterKnife;
  * QQ: 5036175
  * Description:
  */
-public class CalendarActivity extends AppCompatActivity implements OnDateSelectedListener {
+public class CalendarActivity extends AppCompatActivity implements OnDateSelectedListener, View.OnClickListener {
 
     @BindView(R.id.mcv)
     MaterialCalendarView materialCalendarView;
@@ -60,6 +62,7 @@ public class CalendarActivity extends AppCompatActivity implements OnDateSelecte
                 .setCalendarDisplayMode(CalendarMode.MONTHS)
                 .commit();
 
+        materialCalendarView.setOnTitleClickListener(this);
         materialCalendarView.setSelectionMode(MaterialCalendarView.SELECTION_MODE_MULTIPLE);
         materialCalendarView.setOnDateChangedListener(this);
     }
@@ -93,6 +96,15 @@ public class CalendarActivity extends AppCompatActivity implements OnDateSelecte
                 materialCalendarView.addDecorator(new DatesDecorator(2));
                 break;
         }
+    }
+
+    @Override
+    public void onClick(View v) {
+        Toast.makeText(this,v.getId()+"",Toast.LENGTH_SHORT).show();
+        materialCalendarView.clearSelection();
+         materialCalendarView.setSelectedDate(new Date());
+        materialCalendarView.setCurrentDate(new Date());
+
     }
 
     private class DatesDecorator implements DayViewDecorator{
