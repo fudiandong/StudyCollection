@@ -1,5 +1,6 @@
 package com.fudd.calendarstudy.activity;
 
+import android.app.FragmentManager;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -9,6 +10,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.fudd.calendarstudy.fragment.DateDialog;
 import com.fudd.main.R;
 import com.prolificinteractive.materialcalendarview.CalendarDay;
 import com.prolificinteractive.materialcalendarview.CalendarMode;
@@ -82,6 +84,15 @@ public class CalendarActivity extends AppCompatActivity implements OnDateSelecte
     public void btnOnClick(View view){
         switch (view.getId()){
             case R.id.btn_confirm:
+                // 弹出 日期dialog
+                FragmentManager fragmentManager = getFragmentManager();
+                DateDialog dateDialog = new DateDialog();
+                dateDialog.show(fragmentManager,"timepicker");
+
+
+
+
+
                 // 1、保存现在选定的日期
                 tv_pre_date.setText(tv_now_date.getText());
                 // 2、改变mcv的画笔颜色
